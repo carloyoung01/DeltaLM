@@ -51,7 +51,7 @@ python stream_cli.py --state history.json observe
 
 The v37 experiment report describes observed operator-tree diversity, an intervention changing subsequent dynamics, long-running finite numerical behavior, and four limited modality-adapter diagnostics. **Operator recombination uses a fixed primitive grammar and is not evidence of discovery of arbitrary new mathematical primitives.** Long-running bounded simulations are not proof of global stability, real-world utility, energy savings, or artificial general intelligence. Modality results do not establish end-to-end semantic understanding. See [experiment report](TEST_REPORT_ZH.md) and [mathematics/code walk-through](MATHEMATICS_AND_CODE_ZH.md).
 
-![Operator and relation trajectories](results/operator_growth.png)
+The numerical results are provided in [`results/results.json`](results/results.json), [`results/long_run.csv`](results/long_run.csv) and [`results/modalities.csv`](results/modalities.csv). The PNG/GIF/WAV visual and audio samples are not included in the repository's initial file upload; generate them with `python experiments.py` and `python create_samples.py`. The complete reviewed archive is available separately from the author.
 
 ## Reproducibility
 
