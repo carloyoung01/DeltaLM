@@ -1,0 +1,210 @@
+{
+  "run_kind": "full",
+  "genealogy": {
+    "composed_programs_ever": 258,
+    "functionally_distinct_on_probes": 183,
+    "derived_relations_born": 41,
+    "derived_relations_ablated": 4,
+    "derived_active": 30,
+    "ops_in_derived": 24,
+    "max_live_generation": 4,
+    "causal_difference_l2": 0.11102603807895141,
+    "operator_example": "('add', ('add', ('x',), ('neg', ('y',))), ('add', ('x',), ('neg', ('y',))))",
+    "resource_limits": {
+      "relations": 72,
+      "contacts": 192
+    }
+  },
+  "v36_baseline": {
+    "steps": 250,
+    "relations_final": 5,
+    "derived_final": 0,
+    "contacts": 0,
+    "note": "v36 requires explicit encounter; direct add_relation does not auto-connect"
+  },
+  "snapshot_resume_equivalent": true,
+  "operator_intervention": {
+    "pre_intervention_observed_difference": 0,
+    "after_100_steps_difference_l2": 0.8826548662088147,
+    "same_seed_and_prior_history": true
+  },
+  "history_order": {
+    "same_events_different_order_l2": 0.052884013394041245,
+    "births_forward": 19,
+    "births_reverse": 21
+  },
+  "ongoing_input_stability": [
+    {
+      "seed": 0,
+      "steps": 16000,
+      "finite": true,
+      "peak_relations": 24,
+      "peak_contacts": 61,
+      "relations_final": 6,
+      "births": 25,
+      "deaths": 25,
+      "programs_ever": 165
+    },
+    {
+      "seed": 1,
+      "steps": 16000,
+      "finite": true,
+      "peak_relations": 25,
+      "peak_contacts": 66,
+      "relations_final": 9,
+      "births": 27,
+      "deaths": 24,
+      "programs_ever": 171
+    },
+    {
+      "seed": 2,
+      "steps": 16000,
+      "finite": true,
+      "peak_relations": 21,
+      "peak_contacts": 47,
+      "relations_final": 7,
+      "births": 21,
+      "deaths": 20,
+      "programs_ever": 115
+    }
+  ],
+  "long_run": [
+    {
+      "seed": 0,
+      "steps": 12000,
+      "seconds": 0.7761322430000064,
+      "finite": true,
+      "within_capacity": true,
+      "relations": 5,
+      "contacts": 4,
+      "births": 44,
+      "deaths": 44,
+      "new_programs": 249,
+      "total_activity": 1.7628273859090374e-11
+    },
+    {
+      "seed": 1,
+      "steps": 12000,
+      "seconds": 0.7521652849999327,
+      "finite": true,
+      "within_capacity": true,
+      "relations": 5,
+      "contacts": 4,
+      "births": 45,
+      "deaths": 45,
+      "new_programs": 238,
+      "total_activity": 1.0864715067205957e-11
+    },
+    {
+      "seed": 2,
+      "steps": 12000,
+      "seconds": 0.7836172559999568,
+      "finite": true,
+      "within_capacity": true,
+      "relations": 5,
+      "contacts": 4,
+      "births": 42,
+      "deaths": 42,
+      "new_programs": 246,
+      "total_activity": 1.2857490392861824e-11
+    },
+    {
+      "seed": 3,
+      "steps": 12000,
+      "seconds": 0.7282893640000339,
+      "finite": true,
+      "within_capacity": true,
+      "relations": 5,
+      "contacts": 4,
+      "births": 45,
+      "deaths": 45,
+      "new_programs": 228,
+      "total_activity": 1.6260407240609757e-11
+    },
+    {
+      "seed": 4,
+      "steps": 12000,
+      "seconds": 0.9867705969999179,
+      "finite": true,
+      "within_capacity": true,
+      "relations": 5,
+      "contacts": 4,
+      "births": 46,
+      "deaths": 46,
+      "new_programs": 280,
+      "total_activity": 1.4985049636740962e-11
+    },
+    {
+      "seed": 5,
+      "steps": 12000,
+      "seconds": 0.9007946780000111,
+      "finite": true,
+      "within_capacity": true,
+      "relations": 5,
+      "contacts": 4,
+      "births": 40,
+      "deaths": 40,
+      "new_programs": 295,
+      "total_activity": 1.4144945527866847e-11
+    }
+  ],
+  "modalities": [
+    {
+      "domain": "image",
+      "n_samples": 150,
+      "n_classes": 10,
+      "input_adapter": "handcrafted; no end-to-end raw perception",
+      "raw_1nn": 0.92,
+      "evolving_1nn": 0.92,
+      "evolving_born_mean": 11.9,
+      "evolving_programs_mean": 14.16,
+      "fixed_operator_1nn": 0.88,
+      "fixed_operator_born_mean": 2.8133333333333335,
+      "fixed_operator_programs_mean": 0,
+      "mean_embedding_difference": 0.5116486769264253
+    },
+    {
+      "domain": "text",
+      "n_samples": 80,
+      "n_classes": 4,
+      "input_adapter": "handcrafted; no end-to-end raw perception",
+      "raw_1nn": 1,
+      "evolving_1nn": 1,
+      "evolving_born_mean": 7.2625,
+      "evolving_programs_mean": 12,
+      "fixed_operator_1nn": 1,
+      "fixed_operator_born_mean": 0.775,
+      "fixed_operator_programs_mean": 0,
+      "mean_embedding_difference": 0.40094191922864225
+    },
+    {
+      "domain": "audio",
+      "n_samples": 72,
+      "n_classes": 6,
+      "input_adapter": "handcrafted; no end-to-end raw perception",
+      "raw_1nn": 1,
+      "evolving_1nn": 1,
+      "evolving_born_mean": 15.847222222222221,
+      "evolving_programs_mean": 11.458333333333334,
+      "fixed_operator_1nn": 1,
+      "fixed_operator_born_mean": 13.26388888888889,
+      "fixed_operator_programs_mean": 0,
+      "mean_embedding_difference": 0.5602096510200375
+    },
+    {
+      "domain": "video",
+      "n_samples": 48,
+      "n_classes": 4,
+      "input_adapter": "handcrafted; no end-to-end raw perception",
+      "raw_1nn": 1,
+      "evolving_1nn": 1,
+      "evolving_born_mean": 15.75,
+      "evolving_programs_mean": 15.083333333333334,
+      "fixed_operator_1nn": 1,
+      "fixed_operator_born_mean": 5.5,
+      "fixed_operator_programs_mean": 0,
+      "mean_embedding_difference": 0.6455833573308108
+    }
+  ],
+  "elapsed_seconds": 9.137428192000016
+}
