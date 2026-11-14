@@ -31,7 +31,7 @@ class ResearchExtensionTests(unittest.TestCase):
   x=generate_protocol()
   self.assertEqual(set(x['branches']),{'text','image','audio','video'})
   for item in x['branches'].values():
-   self.assertEqual(set(item),'ABCD')
+   self.assertEqual(set(item),set('ABCD'))
    self.assertNotIn('Observed DeltaLM numerical state history',item['B']['prompt'])
    self.assertIn('Observed DeltaLM numerical state history',item['C']['prompt'])
    self.assertTrue(item['D']['trained_core_coefficients'])
