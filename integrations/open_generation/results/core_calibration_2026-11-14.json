@@ -1,0 +1,58 @@
+{
+  "status": "completed_synthetic_parameter_training",
+  "training_type": "Derivative-free calibration of 2 existing DeltaLM Substrate coefficients; synthetic system identification",
+  "teacher_synthetic": true,
+  "teacher_parameters": [
+    0.943,
+    0.963
+  ],
+  "original_parameters": {
+    "activity_retention": 0.971,
+    "contact_retention": 0.986
+  },
+  "learned_parameters": {
+    "activity_retention": 0.9429999947896999,
+    "contact_retention": 0.9630000021568849
+  },
+  "train_world_seeds": [
+    120,
+    121,
+    122,
+    123
+  ],
+  "heldout_world_seeds": [
+    300,
+    301,
+    302
+  ],
+  "measured_steps": [
+    5,
+    10,
+    18,
+    28
+  ],
+  "training_mae_baseline": 0.09217585921560845,
+  "training_mae_learned": 1.2945000093619378e-8,
+  "heldout_mae_baseline": 0.08705747161977269,
+  "heldout_mae_learned": 1.218991689731576e-8,
+  "optimizer_nfev": 275,
+  "optimizer_success": false,
+  "optimizer_message": "Maximum number of iterations has been exceeded.",
+  "core_comparison": {
+    "initial_relations": 12,
+    "normal_320": {
+      "relations": 44,
+      "births": 32,
+      "activity_abs": 0.54054831
+    },
+    "calibrated_320": {
+      "relations": 30,
+      "births": 18,
+      "activity_abs": 0.53968697
+    }
+  },
+  "GPT_API_ABCD_completed": false,
+  "GPT_weights_trained": false,
+  "OpenAI_Videos_API_shutdown": "2026-09-24",
+  "limitations": "Synthetic same-family parameter calibration; core unchanged; not semantic decoder or GPT training."
+}
