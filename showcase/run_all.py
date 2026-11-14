@@ -7,6 +7,7 @@ from __future__ import annotations
 import sys, json, math, hashlib, copy, csv, platform, time
 from pathlib import Path
 import numpy as np
+import scipy,sklearn,skimage,matplotlib,PIL
 from scipy.spatial.distance import cdist
 from sklearn.datasets import load_digits
 from sklearn.model_selection import train_test_split
@@ -264,6 +265,9 @@ def ecology10():
 def main():
     ts=time.time();summary={'metadata':{'suite':'DeltaLM Open Evolution Showcase v1.2','run_seed':SEED,
         'python':platform.python_version(),'numpy':np.__version__,
+        'scipy':scipy.__version__,'scikit_learn':sklearn.__version__,
+        'scikit_image':skimage.__version__,'matplotlib':matplotlib.__version__,
+        'pillow':PIL.__version__,
         'core_sha256':hashlib.sha256((ROOT/'delta_core.py').read_bytes()).hexdigest(),
         'no_optimization_target':True,'external_features_and_visuals_are_not_model_generated':True}}
     for n,fn in [('01_03',audit_classification),('04',visual_seed),('05',open_world),('06',game),
