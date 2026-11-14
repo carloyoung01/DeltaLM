@@ -1,0 +1,73 @@
+name: Verify and update existing DeltaLM research prerelease
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'integrations/open_generation/**'
+      - '.github/workflows/refresh_delta_research.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install research dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install scipy Pillow
+
+      - name: Verify core extension tests
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          python -m unittest discover -s integrations/open_generation -p test_calibration_extension.py -v
+          python integrations/open_generation/core_calibration.py --maxiter 6
+          python integrations/open_generation/ABCD_protocol.py --medium image --branch D
+
+      - name: Render real trace image audio and MP4
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          command -v ffmpeg
+          python integrations/open_generation/render_training_evolution.py
+          test -s integrations/open_generation/media_calibration/evolution_CD.mp4
+          test -s integrations/open_generation/media_calibration/C_default.wav
+          test -s integrations/open_generation/media_calibration/D_trained.wav
+
+      - name: Update existing v0.1.0-research tag and media attachments
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git config user.name 'github-actions[bot]'
+          git tag -f v0.1.0-research "${{ github.sha }}"
+          git push --force origin refs/tags/v0.1.0-research
+          gh release upload v0.1.0-research integrations/open_generation/media_calibration/* --clobber
+          gh release view v0.1.0-research --json body --jq '.body' > /tmp/deltalm_release_notes.md
+          if ! grep -Fq 'Supplement to existing DeltaLM research prerelease' /tmp/deltalm_release_notes.md; then
+            printf '\n\n---\n\n' >> /tmp/deltalm_release_notes.md
+            cat integrations/open_generation/RELEASE_UPDATE.md >> /tmp/deltalm_release_notes.md
+          fi
+          gh release edit v0.1.0-research --notes-file /tmp/deltalm_release_notes.md --prerelease
+
+      - name: Confirm actual Release tag and uploaded files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view v0.1.0-research --json tagName,isPrerelease,assets,url
+          git ls-remote --tags origin refs/tags/v0.1.0-research
