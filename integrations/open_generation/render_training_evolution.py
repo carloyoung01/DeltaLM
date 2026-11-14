@@ -3,7 +3,7 @@ Files are programmatic renderings; they are NOT generative GPT audio/video.
 Requires numpy Pillow ffmpeg. Run from repository root.
 """
 from __future__ import annotations
-import sys,json,math,wave,subprocess
+import sys,json,math,wave,subprocess,shutil
 from pathlib import Path
 import numpy as np
 from PIL import Image,ImageDraw
@@ -89,7 +89,11 @@ def run():
     tmp=HERE/'_temporary_frames';tmp.mkdir(exist_ok=True)
     for i,frame in enumerate(frames):frame.save(tmp/f'{i:03d}.png')
     dest=OUT/'evolution_CD.mp4'
-    proc=subprocess.run(['ffmpeg','-loglevel','error','-y','-framerate','5',
+    ffmpeg=shutil.which('ffmpeg')
+    if not ffmpeg:
+        import imageio_ffmpeg
+        ffmpeg=imageio_ffmpeg.get_ffmpeg_exe()
+    proc=subprocess.run([ffmpeg,'-loglevel','error','-y','-framerate','5',
          '-i',str(tmp/'%03d.png'),'-c:v','libx264','-pix_fmt','yuv420p',str(dest)],
          capture_output=True,text=True)
     for f in tmp.glob('*.png'):f.unlink()
