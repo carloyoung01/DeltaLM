@@ -79,3 +79,12 @@ This is research software, not an autonomous system authorized to act on the phy
 **Copyright:** © 2026 Carlo Young.
 
 **License:** [Apache License 2.0](LICENSE), including commercial and company use under its terms. Third-party dependencies and datasets retain their own licenses; see [THIRD_PARTY.md](THIRD_PARTY.md). No DOI, paper acceptance, or peer review is claimed.
+
+## Open Evolution Showcase (10 reproducible demonstrations)
+
+The [Open Evolution Showcase](showcase/README.md) studies how historical relational structures change future executable contacts and local operations. It includes **01–03** reference classification tests, **07** controlled rewrite counterfactuals (scientific center), **05–06** open microcosm and no-end game, and **04 / 10** explicitly limited exploratory probes. Non-events, decay, and negative outcomes are reported. No autonomous biological evolution or new mathematical primitives are claimed.
+
+- [Results and limitations (Chinese)](showcase/RESULTS_ZH.md)
+- [Offline interactive replay](showcase/observatory.html) (download and open locally; GitHub does not execute the HTML)
+- [Complete reproducibility archive](showcase/archives/full_evidence_2026-11-14.zip)
+- Re-run: `python showcase/run_all.py`; verify: `python -m unittest showcase/test_integrity.py -v`

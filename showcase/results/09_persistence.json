@@ -1,0 +1,9 @@
+{
+  "activity_at_180": 0.58857944,
+  "passive_final_activity": 0.01605971,
+  "passive_births_since_fork": 0,
+  "passive_deaths_since_fork": 32,
+  "recontact_activity": 0.01747247,
+  "snapshot_restorable": true,
+  "distinction": "player pause vs natural decay vs snapshot restore vs external recontact"
+}

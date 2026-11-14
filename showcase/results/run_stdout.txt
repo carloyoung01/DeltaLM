@@ -1,0 +1,17 @@
+RUN 01_03
+DONE 01_03 seconds 0.35
+RUN 04
+DONE 04 seconds 0.37
+RUN 05
+DONE 05 seconds 1.27
+RUN 06
+DONE 06 seconds 0.55
+RUN 07
+DONE 07 seconds 1.32
+RUN 08
+DONE 08 seconds 1.27
+RUN 09
+DONE 09 seconds 2.7
+RUN 10
+DONE 10 seconds 0.58
+FINAL SUMMARY {"metadata": {"suite": "DeltaLM Open Evolution Showcase v1.2", "run_seed": 20261114, "python": "3.13.5", "numpy": "2.3.5", "core_sha256": "4c7adaf91b376cdecd8c399ebc327f147d3e6b73ab58b2ca0b7b98287b711693", "no_optimization_target": true, "external_features_and_visuals_are_not_model_generated": true, "runtime_seconds": 8.41}, "01_03": "written", "04": "written", "05": "written", "06": "written", "07": "written", "08": "written", "09": "written", "10": "written"}
