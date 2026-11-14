@@ -88,3 +88,8 @@ The [Open Evolution Showcase](showcase/README.md) studies how historical relatio
 - [Offline interactive replay](showcase/observatory.html) (download and open locally; GitHub does not execute the HTML)
 - [Complete reproducibility archive](showcase/archives/full_evidence_2026-11-14.zip)
 - Re-run: `python showcase/run_all.py`; verify: `python -m unittest showcase/test_integrity.py -v`
+
+
+## Open-generation & learning-interface research (experiments 11–14)
+
+The [integrated generation and learning research](integrations/open_generation/README.md) extends the **unchanged ten-item Showcase** with trace-grounded GPT text examples, deterministic image/audio/video renderings, and a held-out external numeric learning probe. These are **not** proof of GPT joint-weight training, full neural multimodal API generation, or independently trained DeltaLM core weights. All negative and null outcomes are retained. See the [Chinese evidence report](integrations/open_generation/RESULTS_ZH.md), the [offline media observatory](integrations/open_generation/observatory.html), and the [reproducible research archive](integrations/open_generation/archives/DeltaLM_integrated_research_2026-11-14.zip).

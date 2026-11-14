@@ -1,0 +1,37 @@
+{
+  "core_git_blob_sha": "515bb96dece31d81ad8a55deaf9c2d13b937a96c",
+  "date": "2026-11-14",
+  "author": "Carlo Young",
+  "license": "Apache-2.0",
+  "parent_study": "Original 10 Showcase kept intact",
+  "new_experiments": [
+    11,
+    12,
+    13,
+    14
+  ],
+  "external_media": true,
+  "GPT_multimodal_API_inference_completed": false,
+  "GPT_weight_training_completed": false,
+  "filename_to_sha256": {
+    "METHODS.md": "faad6c42aefdc5d2ebcbfabdbd82e9eb50c5f0d5fa2119ef73a3ee8ec416ed59",
+    "README.md": "33490a54617a899cf49e00e5fa749a18c8f334ac9b36a1ed3385a3f801e17298",
+    "RESULTS_ZH.md": "7eedba573b7a58b2b8ce3f938402a8d870466470334b853a99534e477f36cada",
+    "TEXT_EXAMPLES_ZH.md": "37f2b876a3fbea6623442c64229888a64f3f06a325c29e4b2a359262b1707a8b",
+    "integrated_research.py": "0329beeacf427ff805fcf0ac152caf5b76eaa629f407444259bac8b4ed1b96d3",
+    "media/12_image_A_initial.png": "bab80a80b3d5cf0951db90986af059e380eb9b9ee5ee9a494b90851edf790148",
+    "media/12_image_C_history.png": "e2e5b88f6fc85b9415352745ec4693d09a3048fff21386a2c59fa3ad0a5e900e",
+    "media/12_image_C_no_stimuli.png": "e39acbcf8b829ecc82b602e6a2a8cca48ff76ca849719cb8f2ee64860c819005",
+    "media/13_audio_A_static.wav": "fa5ac76c8596e63f1d2b08c3b5c7afbc04cfe8a2866c9c17ddd8e28e95ba7ac5",
+    "media/13_audio_C_trace_sonification.wav": "41134aee0079c6b7f2c0bb84e4467ed5b0d04b19f913afefa19f4ecdd235aaaf",
+    "media/14_video_A_static.mp4": "0cb3fcf9fc0545135a35304bc62d1a9444a7a67774d08950886a5a39553f3b7d",
+    "media/14_video_C_trace_replay.mp4": "e9ceb8f3d797f8f136582948c3a871567109c72b92dab9e9c5833cacb677bec0",
+    "observatory.html": "9ff32655cb221a6a971c515bd88d91855d8f4df592305a8481bea0acac3d6148",
+    "render_media.py": "6764044c4db775fb692c3de263f0fcbb31098ab40dd2a24af5c38ba6839cb9bd",
+    "results/assessment.json": "883f4f23f2bdf73bf6394f9a464a056ef6e48882846a919240f9ec745313aca1",
+    "results/external_training_probe.json": "eabeebc42f263cb876b7c67872006824190b0e580300dd70331639db8983849e",
+    "results/four_media_core_trace.json": "b250fa92be7712f1e27d10d2faee5ad2ad04908cadac45ec8f7aa02491d07d26",
+    "results/generation_control_trace.json": "6716ed1e5415d57cbb93db53f0d1a205b21f2a7bc693f45de79c5708f3ef060e",
+    "test_integrity.py": "10ef455640a62429d7b6e0c15ea394b31cbd354c6576afacecb281465d6f69cb"
+  }
+}

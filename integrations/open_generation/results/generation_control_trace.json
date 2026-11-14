@@ -1,0 +1,97 @@
+{
+  "initial_prompt": "A quiet shore, wind, stones, seeds, and an echo; no ending is prescribed.",
+  "world_labels_supplied_by_researcher": [
+    "tide",
+    "stone",
+    "light",
+    "wind",
+    "shore",
+    "seed",
+    "shadow",
+    "echo"
+  ],
+  "mapping_policy": "Only direction, relation birth/death, relative activity and observed contact structures; no automatic animal/game semantic inference",
+  "readings": [
+    {
+      "step": 0,
+      "relations": 12,
+      "births_cumulative": 0,
+      "deaths_cumulative": 0,
+      "activity": 6.810952,
+      "direction": "similar",
+      "interpretation_is_external": true
+    },
+    {
+      "step": 40,
+      "relations": 44,
+      "births_cumulative": 32,
+      "deaths_cumulative": 0,
+      "activity": 4.006673,
+      "direction": "weaker",
+      "interpretation_is_external": true
+    },
+    {
+      "step": 80,
+      "relations": 44,
+      "births_cumulative": 32,
+      "deaths_cumulative": 0,
+      "activity": 1.315739,
+      "direction": "weaker",
+      "interpretation_is_external": true
+    },
+    {
+      "step": 120,
+      "relations": 44,
+      "births_cumulative": 32,
+      "deaths_cumulative": 0,
+      "activity": 0.918995,
+      "direction": "weaker",
+      "interpretation_is_external": true
+    },
+    {
+      "step": 160,
+      "relations": 44,
+      "births_cumulative": 32,
+      "deaths_cumulative": 0,
+      "activity": 0.667575,
+      "direction": "weaker",
+      "interpretation_is_external": true
+    },
+    {
+      "step": 200,
+      "relations": 44,
+      "births_cumulative": 32,
+      "deaths_cumulative": 0,
+      "activity": 0.512128,
+      "direction": "weaker",
+      "interpretation_is_external": true
+    },
+    {
+      "step": 240,
+      "relations": 44,
+      "births_cumulative": 32,
+      "deaths_cumulative": 0,
+      "activity": 0.489825,
+      "direction": "similar",
+      "interpretation_is_external": true
+    },
+    {
+      "step": 280,
+      "relations": 44,
+      "births_cumulative": 32,
+      "deaths_cumulative": 0,
+      "activity": 0.550755,
+      "direction": "similar",
+      "interpretation_is_external": true
+    },
+    {
+      "step": 320,
+      "relations": 44,
+      "births_cumulative": 32,
+      "deaths_cumulative": 0,
+      "activity": 0.540548,
+      "direction": "similar",
+      "interpretation_is_external": true
+    }
+  ]
+}
